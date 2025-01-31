@@ -24,37 +24,37 @@ const Navbar = () => {
     const pathname = usePathname()
 
     useEffect(() => {
-      setProgress(20)
+        setProgress(20)
 
-      setTimeout(() => {
-        setProgress(40)
-      }, 100);
+        setTimeout(() => {
+            setProgress(40)
+        }, 100);
 
-      setTimeout(() => {
-        setProgress(100)
-      }, 400);
-     
+        setTimeout(() => {
+            setProgress(100)
+        }, 400);
+
     }, [pathname])
 
 
 
     useEffect(() => {
-      setTimeout(() => {
-       setProgress(0)
-      }, 50);
+        setTimeout(() => {
+            setProgress(0)
+        }, 50);
     }, [])
-    
-    
+
+
     return (
         <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
             <LoadingBar
-        color='#933ce6'
-        progress={progress}
-        onLoaderFinished={() => setProgress(0)}
-      />
+                color='#933ce6'
+                progress={progress}
+                onLoaderFinished={() => setProgress(0)}
+            />
             <div className="container mx-auto flex justify-between items-center">
                 <Link href={"/"}><div className="text-lg font-bold">
-                    HarryBlog
+                    Sports-Blog
                 </div></Link>
                 <div className="hidden md:flex space-x-4 items-center">
                     <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300"> Home
@@ -62,23 +62,19 @@ const Navbar = () => {
                     <Link href="/about" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
                         About
                     </Link>
+                    <Link href="/gallery" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+                        Gallery
+                    </Link>
                     <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
                         Blog
                     </Link>
-                    <Link href="/contact" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
-                        Contact
-                    </Link>
-                    <div className='flex items-center'>
-                        <Button className="mx-1" variant="outline">Login</Button>
-                        <Button className="mx-1" variant="outline">Signup</Button>
-                        <ModeToggle />
-                    </div>
+                    
                 </div>
 
                 <div className="md:hidden">
-                        <span className="mx-2"> 
-                            <ModeToggle />
-                        </span>
+                    <span className="mx-2">
+                        <ModeToggle />
+                    </span>
                     <Sheet>
                         <SheetTrigger>
                             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -87,7 +83,7 @@ const Navbar = () => {
                         </SheetTrigger>
                         <SheetContent>
                             <SheetHeader>
-                                <SheetTitle className="font-bold my-4">HarryBlog</SheetTitle>
+                                <SheetTitle className="font-bold my-4">Sports-Blog</SheetTitle>
                                 <SheetDescription>
                                     <div className="flex flex-col gap-6">
                                         <Link href="/"> Home
@@ -95,17 +91,13 @@ const Navbar = () => {
                                         <Link href="/about">
                                             About
                                         </Link>
+                                        <Link href="/gallery">
+                                            Gallery
+                                        </Link>
                                         <Link href="/blog">
                                             Blog
                                         </Link>
-                                        <Link href="/contact">
-                                            Contact
-                                        </Link>
-                                        <div>
-                                            <Button className="mx-1 text-xs" variant="outline">Login</Button>
-                                            <Button className="mx-1 text-xs" variant="outline">Signup</Button>
-
-                                        </div>
+                                        
 
                                     </div>
                                 </SheetDescription>
