@@ -1,10 +1,10 @@
 ---
-title: Physical- fitness program 
+title: volleyball Program
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-slug: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+slug: volleyball-program
 date: 02/03/2025
 author: sammy
-image: 3.jpeg
+image: 2.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. 
 

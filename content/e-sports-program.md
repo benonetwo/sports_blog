@@ -1,10 +1,10 @@
 ---
-title: Sports Program
+title: E-Sports Program
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-slug: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+slug: e-sports-program
 date: 02/03/2025
 author: sammy
-image: 4.jpeg
+image: 1a.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. 
 

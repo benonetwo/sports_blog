@@ -1,10 +1,10 @@
 ---
-title: volleyball Program
+title: Sports-Program
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-slug: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+slug: sports-program
 date: 02/03/2025
 author: sammy
-image: 2.jpeg
+image: 4.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. 
 

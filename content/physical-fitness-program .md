@@ -1,10 +1,10 @@
 ---
-title: E-Sports Program
+title: Physical- fitness program 
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-slug: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+slug: physical-fitness-program 
 date: 02/03/2025
 author: sammy
-image: 1a.jpeg
+image: 3.jpeg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. 
 
