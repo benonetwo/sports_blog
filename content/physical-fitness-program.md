@@ -1,5 +1,5 @@
 ---
-title: Physical- fitness program 
+title: Physical-Fitness-Program 
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 slug: physical-fitness-program 
 date: 02/03/2025
