@@ -1,7 +1,7 @@
-"use client"
-import React from 'react'
+"use client";
+import React from 'react';
 import Link from 'next/link';
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
     Sheet,
     SheetContent,
@@ -9,41 +9,36 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from "@/components/ui/sheet"
+} from "@/components/ui/sheet";
 
 import { ModeToggle } from './theme-btn';
 import LoadingBar from 'react-top-loading-bar';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
 
-
-
 const Navbar = () => {
 
-    const [progress, setProgress] = useState(0)
-    const pathname = usePathname()
+    const [progress, setProgress] = useState(0);
+    const pathname = usePathname();
 
     useEffect(() => {
-        setProgress(20)
+        setProgress(20);
 
         setTimeout(() => {
-            setProgress(40)
+            setProgress(40);
         }, 100);
 
         setTimeout(() => {
-            setProgress(100)
+            setProgress(100);
         }, 400);
 
-    }, [pathname])
-
-
+    }, [pathname]);
 
     useEffect(() => {
         setTimeout(() => {
-            setProgress(0)
+            setProgress(0);
         }, 50);
-    }, [])
-
+    }, []);
 
     return (
         <nav className="p-4 bg-background/50 sticky top-0 backdrop-blur border-b z-10">
@@ -53,9 +48,13 @@ const Navbar = () => {
                 onLoaderFinished={() => setProgress(0)}
             />
             <div className="container mx-auto flex justify-between items-center">
-                <Link href={"/"}><div className="text-lg font-bold">
-                    Sports-Blog
-                </div></Link>
+                <Link href={"/"}>
+                    <div className="text-lg font-bold">
+                        Sports-Blog
+                    </div>
+                </Link>
+
+                {/* Desktop View Links */}
                 <div className="hidden md:flex space-x-4 items-center">
                     <Link href="/" className="hover:scale-105 hover:font-semibold transition-transform duration-300"> Home
                     </Link>
@@ -68,12 +67,18 @@ const Navbar = () => {
                     <Link href="/blog" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
                         Blog
                     </Link>
-                    
+                    <Link href="/contact" className="hover:scale-105 hover:font-semibold transition-transform duration-300">
+                        Contact
+                    </Link>
+
+                    {/* Light/Dark Mode Toggle in Desktop */}
+                    <ModeToggle />
                 </div>
 
+                {/* Mobile View Links & Menu */}
                 <div className="md:hidden">
                     <span className="mx-2">
-                        <ModeToggle />
+                        <ModeToggle />  {/* Keep ModeToggle in the mobile view */}
                     </span>
                     <Sheet>
                         <SheetTrigger>
@@ -97,23 +102,18 @@ const Navbar = () => {
                                         <Link href="/blog">
                                             Blog
                                         </Link>
-                                        
-
+                                        <Link href="/contact">
+                                            Contact
+                                        </Link>
                                     </div>
                                 </SheetDescription>
                             </SheetHeader>
                         </SheetContent>
                     </Sheet>
-
                 </div>
-
-
             </div>
-
-
-
         </nav>
     );
 };
 
-export default Navbar
+export default Navbar;
